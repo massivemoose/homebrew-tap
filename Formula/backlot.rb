@@ -5,20 +5,20 @@
 class Backlot < Formula
   desc "Private workspace for public repos."
   homepage "https://github.com/massivemoose/backlot"
-  version "0.3.0"
+  version "0.4.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/massivemoose/backlot/releases/download/v0.3.0/backlot_0.3.0_darwin_amd64.tar.gz"
-      sha256 "4dc0db3f614b9af2aa397bb218bf2f87f40dd73d2dac2ce4503c479b0ebed5cd"
+      url "https://github.com/massivemoose/backlot/releases/download/v0.4.0/backlot_0.4.0_darwin_amd64.tar.gz"
+      sha256 "efc64f70ae32c8bf56c79ad9b01f80a5e8bc614abfec36226201335abd4521be"
 
       define_method(:install) do
         bin.install "backlot"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/massivemoose/backlot/releases/download/v0.3.0/backlot_0.3.0_darwin_arm64.tar.gz"
-      sha256 "10f21cb0a0dd0717fa4768e01185f3ac84ab7f4842cd3f9b750d138ac498b267"
+      url "https://github.com/massivemoose/backlot/releases/download/v0.4.0/backlot_0.4.0_darwin_arm64.tar.gz"
+      sha256 "5b786f3ae029c720fd950ebca95011bfc7288ba781c0758a697f694ca4ab95e7"
 
       define_method(:install) do
         bin.install "backlot"
@@ -28,15 +28,15 @@ class Backlot < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/massivemoose/backlot/releases/download/v0.3.0/backlot_0.3.0_linux_amd64.tar.gz"
-      sha256 "abb93ffbadbe3ab3a9fa192a41aecd709b8cc5e4bad8046e5d521778a94bab9e"
+      url "https://github.com/massivemoose/backlot/releases/download/v0.4.0/backlot_0.4.0_linux_amd64.tar.gz"
+      sha256 "2b39e6749047d707f3a7e0a666be8763478dd0caa1ad03ae76cd15c2d9e0f8d9"
       define_method(:install) do
         bin.install "backlot"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/massivemoose/backlot/releases/download/v0.3.0/backlot_0.3.0_linux_arm64.tar.gz"
-      sha256 "16ce3aa04c4a6f6fab23471d7235e55d3325e62c954f91b88c6b9131be4a9a5c"
+      url "https://github.com/massivemoose/backlot/releases/download/v0.4.0/backlot_0.4.0_linux_arm64.tar.gz"
+      sha256 "a6eb7ea256ad2a99de14f7ae75d106e2299a27c137d3b0994361fcdfbc0ee6cd"
       define_method(:install) do
         bin.install "backlot"
       end
